@@ -1,0 +1,8 @@
+{
+    "name": "Crane_Control_Client",
+    "version": "1.0.0",
+    "keywords": ["util", "functional", "server", "client", "browser"],
+    "author": "Jonathan",
+    "contributors": [],
+    "dependencies": {}
+}
