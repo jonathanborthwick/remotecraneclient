@@ -19,10 +19,10 @@
                     max: 100,
                     value: 60,
                     slide: function (event, ui) {
-                        $("#amount").val(ui.value);
+                        $("#heightAmount").val(ui.value);
                     }
                 });
-                $("#amount").val($("#slider-vertical").slider("value"));
+                $("#heightAmount").val($("#slider-vertical").slider("value"));
             });
         </script>
     </head>
@@ -30,11 +30,20 @@
     <body>
         <h2>Remote Crane Control</h2>
         <p>
-            <label for="amount">Height:</label>
-            <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+            <label for="heightAmount">Height:</label>
+            <input type="text" id="heightAmount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+        </p>
+        <p>
+           <label for="amount">North South:</label>
+            <input type="text" id="nsAmount" readonly style="border:0; color:#f6931f; font-weight:bold;"> 
+        </p>
+        <p>
+           <label for="amount">East West:</label>
+            <input type="text" id="ewAmount" readonly style="border:0; color:#f6931f; font-weight:bold;"> 
         </p>
 
         <div id="slider-vertical" style="height:200px;"></div>
-
+        <div id="slider-ns" style="height:200px;"></div>
+        <div id="slider-ew" style="width:200px;"></div>
     </body>
 </html>
